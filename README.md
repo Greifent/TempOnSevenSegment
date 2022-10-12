@@ -18,7 +18,7 @@ Installation should be pretty straight forward, everything is located inside fol
 
 * Build the circuit;
 * On the PC start the server.py file;
-* On the Raspberry the py.py file;
+* On the Raspberry the py.py file, change the IP addres to the one of your PC;
 * Load the file into an Arduino.
 
 If you wanna use this daily, it is suggested to make all the files to be executed on startup.
