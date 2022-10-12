@@ -4,7 +4,7 @@ LedControl lc=LedControl(12,11,10,1);
 
 void setup() {
   lc.shutdown(0,false);
-  lc.setIntensity(0,8);
+  lc.setIntensity(0,1);
   lc.clearDisplay(0);
   // Join I2C bus as slave with address 8
   Wire.begin(0x8);
