@@ -21,4 +21,5 @@ Installation should be pretty straight forward:
 * On the Raspberry the py.py file;
 * Load the file into an Arduino.
 
+If you wanna use this daily, it is suggested to make all the files to be executed on startup.
 If you are having issues feel free to open an issue!
