@@ -5,5 +5,8 @@ class i2c:
     def write(temp):
         addr = 0x8 # bus address
         bus = SMBus(1) # indicates /dev/ic2-1
-        bus.write_byte(addr, int(temp)) # send value
+        try:
+            bus.write_byte(addr, int(temp)) # send value
+        except:
+            return -1
 
