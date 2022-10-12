@@ -9,4 +9,3 @@ class i2c:
             bus.write_byte(addr, int(temp)) # send value
         except:
             return -1
-
