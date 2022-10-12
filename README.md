@@ -14,7 +14,7 @@ The schematic to follow can be found in the schematics folder, it was made using
 
 ## Installation
 
-Installation should be pretty straight forward:
+Installation should be pretty straight forward, everything is located inside folders in the src folder:
 
 * Build the circuit;
 * On the PC start the server.py file;
