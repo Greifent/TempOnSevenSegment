@@ -1,1 +1,4 @@
 src/PC/__pycache__/server.cpython-310.pyc
+src/PC/PCLIB/__pycache__/temp.cpython-310.pyc
+src/PI/__pycache__/pi.cpython-310.pyc
+src/PI/PILIB/__pycache__/i2c.cpython-310.pyc
