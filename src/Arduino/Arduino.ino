@@ -1,6 +1,8 @@
 #include "LedControl.h"
 #include <Wire.h>
 LedControl lc=LedControl(12,11,10,1);
+static uint32_t LastTime = 0;
+uint32_t Now;
 
 void setup() {
   lc.shutdown(0,false);
@@ -23,10 +25,16 @@ void receiveEvent(int howMany) {
   while (Wire.available()) {
     value = Wire.read(); // receive byte as a character
   }
+  LastTime = Now;
   showValue(value);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+  Now = millis();
+  if((Now - LastTime) > 10000){
+    LastTime = Now;
+    lc.clearDisplay(0);
+  }
+  delay(1000);
 }
